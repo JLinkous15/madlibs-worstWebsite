@@ -1,10 +1,11 @@
 
-import { MadLibs } from "./madlibs.js"
+import { Madlibs } from "./madlibs.js"
+
 
 const container = document.querySelector("#mainContainer") 
 
 const renderAllHTML = () => { 
-    container.innerHTML = MadLibs()
+    container.innerHTML = Madlibs()
 }
 
 renderAllHTML()
