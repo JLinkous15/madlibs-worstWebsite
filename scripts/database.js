@@ -384,7 +384,7 @@ const database = {
         { id: 1, type: "tree pose" },
         { id: 2, type: "cat/cow"},
         { id: 3, type: "eagle pose" }, 
-        { id: 3, type: "mountain" }
+        { id: 4, type: "mountain" }
     ],
     sausages: [ 
         { id: 1, type: "sweet Italian"},
@@ -641,12 +641,12 @@ const database = {
             display: 1
         },
         {
-            id: 2,
+            id: 3,
             type: "Hail",
             display: 1
         },
         {
-            id: 2,
+            id: 4,
             type: "Sleet",
             display: 1
         }
@@ -663,12 +663,12 @@ const database = {
             display: 1
         },
         {
-            id: 2,
+            id: 3,
             type: "hot",
             display: 1
         },
         {
-            id: 2,
+            id: 4,
             type: "cold",
             display: 1
         }
@@ -685,7 +685,7 @@ const database = {
             display: 1
         },
         {
-            id: 2,
+            id: 3,
             type: "Platinum",
             display: 1
         }   
@@ -695,13 +695,10 @@ const database = {
         {
             id: 1,
             type: "ultra running"
-
         },
         {
             id: 2,
             type: "rock-climbing"
-
-
         },
         {
             id: 3,
@@ -852,17 +849,17 @@ const database = {
         {
             id: 1,
             response: `
-            There once was a tale, 
-            of a little snail, 
-            who got lost in the forest and found some old rail. 
-            The little snail, 
-            followed the rail, 
-            leading it to a cavern of shale. 
-            Inch by inch, the light grew dimmer, 
-            with every slither, the halls moved slimmer. 
-            By the time the snail looked around, 
-            it was then melting into the ground.
-            `
+                        There once was a tale, 
+                        of a little snail, 
+                        who got lost in the forest and found some old rail. 
+                        The little snail, 
+                        followed the rail, 
+                        leading it to a cavern of shale. 
+                        Inch by inch, the light grew dimmer, 
+                        with every slither, the halls moved slimmer. 
+                        By the time the snail looked around, 
+                        it was then melting into the ground.
+                        `
         }
     ]
 }
@@ -924,7 +921,7 @@ export const getFoods = () => {
     return database.foods.map(food => ({ ...food }))
 
 }
-export const getTimeOfDay = () => {
+export const getTimeOfDays = () => {
     return database.timeOfDay.map(time => ({ ...time }))
 
 }
