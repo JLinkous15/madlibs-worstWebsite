@@ -1,1 +1,0 @@
-import { getLocations } from "../database.js";

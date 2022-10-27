@@ -231,7 +231,8 @@ const database = {
         {
             id: 14,
             type: "American chestnut"
-  
+        }
+    ],
     aromas: [
         {
             id: 1,
@@ -336,7 +337,7 @@ const database = {
             type: "leaf beatle",
             display: 2
         }
-        ]
+        ],
     eightiesMovies: [
         { id: 1, type: "Beetle Juice"},
         { id: 2, type: "Rain Man" },
@@ -709,7 +710,7 @@ const database = {
             display: 1
         }   
     ],
-=======
+
     sports: [
         {
             id: 1,
@@ -887,8 +888,6 @@ const database = {
 }
 
 
-
-
 export const getAromas = () => {
     return database.aromas.map(aroma => ({...aroma}))
 }
@@ -968,6 +967,7 @@ export const getRestaurants = () => {
 }
 export const getCountries = () => {
     return database.countries.map(country => ({ ...country }))
+}
 
 export const getMadResponse = () => {
     return database.madResponse.map(madResponse => ({...madResponse}))
@@ -995,23 +995,6 @@ export const getBodiesOfWater = () => {
 }
 export const getHolidays = () => {
     return database.holidays.map(holiday => ({ ...holiday }))
-
-}
-
-export const getLocations = () => {
-    return database.locations.map(location => ({...location}))
-}
-
-export const getTrees = () => {
-    return database.trees.map(tree => ({...tree}))
-}
-
-export const getFoods = () => {
-    return database.foods.map(food => ({...food}))
-}
-
-export const getAnimals = () => {
-    return database.animals.map(animal => ({...animal}))
 }
 
 export const getFigures = () => {

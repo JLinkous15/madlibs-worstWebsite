@@ -1,1 +1,0 @@
-import { getVehicles } from "../database.js";

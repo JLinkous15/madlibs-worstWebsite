@@ -1,4 +1,4 @@
-import { getLocations } from "./database.js"
+import { getLocations } from "../database.js"
 
 
 const locations = getLocations()
@@ -9,7 +9,7 @@ export const locationsHTML = () => {
     if(locations.length <= 3){
         html += `<ul>`
         const tempHTML = locations.map(location=>
-            `<li><input type="radio" name="locations" value="${location.id}"/> ${location.name}</li>`
+            `<li><input type="radio" name="locations" value="${location.id}"/> ${location.type}</li>`
             )
         html += `${tempHTML.join("")}</ul>`
     } else {
@@ -17,7 +17,7 @@ export const locationsHTML = () => {
         <option value="0">Prompt to select resource...</option>`
 
         const tempHTML = locations.map(location=>
-            `<option value="${location.id}">${location.name}</option>`)
+            `<option value="${location.id}">${location.type}</option>`)
             
         html += `${tempHTML.join("")}</select>`
     }
