@@ -7,9 +7,9 @@ export const drinkingGlassHTML = () => {
     let html = `<label for="drinkingGlass">Choose a Drinking Glass:</label>
     `
     if(drinkingGlass.length <= 3){
-        html += `<ul>`
+        html += `<ul id="questions">`
         const tempHTML = drinkingGlass.map(glass=>
-            `<li><input type="radio" name="drinkingGlass" value="${glass.id}"/> ${glass.type}</li>`
+            `<li class="answers"><input type="radio" name="drinkingGlass" value="${glass.id}"/> ${glass.type}</li>`
             )
         html += `${tempHTML.join("")}</ul>`
     } else {

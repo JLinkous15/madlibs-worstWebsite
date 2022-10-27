@@ -2,12 +2,13 @@ import { getVehicles } from "../database.js"
 
 
 const vehicles = getVehicles()
+
 export const vehiclesHTML = () => {
     
     let html = `<label for="vehicles">Choose a Vehicle:</label>
     `
     if(vehicles.length <= 3){
-        html += `<ul>`
+        html += `<ul id="questions">`
         const tempHTML = vehicles.map(vehicle=>
             `<li><input type="radio" name="vehicles" value="${vehicle.id}"/> ${vehicle.name}</li>`
             )

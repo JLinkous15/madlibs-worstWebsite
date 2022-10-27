@@ -8,7 +8,7 @@ export const famousRevolutionsHTML = () => {
     `
     if (revolutions.length <= 3) {
         
-        html += `<ul>`
+        html += `<ul id="questions">`
         const tempHTML = revolutions.map(revolution=>
             `<li><input type="radio" name="revolutions" value="${revolution.id}"/> ${revolution.type}</li>`
             )

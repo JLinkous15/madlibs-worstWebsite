@@ -7,7 +7,7 @@ export const patternsHTML = () => {
     let html = `<label for="patterns">Choose a Location:</label>
     `
     if(patterns.length <= 3){
-        html += `<ul>`
+        html += `<ul id="questions">`
         const tempHTML = patterns.map(pattern=>
             `<li><input type="radio" name="patterns" value="${pattern.id}"/> ${pattern.type}</li>`
             )

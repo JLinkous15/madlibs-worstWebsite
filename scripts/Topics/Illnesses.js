@@ -8,7 +8,7 @@ export const illnessesHTML = () => {
     `
     if (illnesses.length <= 3) {
         
-        html += `<ul>`
+        html += `<ul id="questions">`
         const tempHTML = illnesses.map(illness=>
             `<li><input type="radio" name="illnesses" value="${illness.id}"/> ${illness.type}</li>`
             )

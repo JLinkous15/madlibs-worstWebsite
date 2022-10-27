@@ -2,8 +2,8 @@ import { animalsHTML } from "./Topics/Animals.js"
 import { aromasHTML } from "./Topics/Aromas.js"
 import { beatlesHTML } from "./Topics/Beatles.js"
 import { condimentsHTML } from "./Topics/Condiments.js"
-import { danceMoviesHTML } from "./Topics/DanceMoves.js"
-import { drinkingGlassHTML } from "./Topics/DrinkingGLass.js"
+import { danceMovesHTML } from "./Topics/DanceMoves.js"
+import { drinkingGlassHTML } from "./Topics/DrinkingGlass.js"
 import { eightiesMoviesHTML } from "./Topics/EightiesMovies.js"
 import { famousRevolutionsHTML } from "./Topics/FamousRevolutions.js"
 import { foodsHTML } from "./Topics/Foods.js"
@@ -14,7 +14,7 @@ import { hotelsHTML } from "./Topics/Hotels.js"
 import { illnessesHTML } from "./Topics/Illnesses.js"
 import { legumesHTML } from "./Topics/Legumes.js"
 import { locationsHTML } from "./Topics/Locations.js"
-import { loomHTML } from "./Topics/Loom.js"
+import { loomsHTML } from "./Topics/Loom.js"
 import { mountainRangesHTML } from "./Topics/MountainRanges.js"
 import { patternsHTML } from "./Topics/Patterns.js"
 import { picklesHTML } from "./Topics/Pickles.js"
@@ -26,14 +26,16 @@ import { sandwichesHTML } from "./Topics/Sandwiches.js"
 import { sausagesHTML } from "./Topics/Sausages.js"
 import { shapesHTML } from "./Topics/Shapes.js"
 import { shoesHTML } from "./Topics/Shoes.js"
+import { sportsHTML } from "./Topics/Sports.js"
 import { timeOfDayHTML } from "./Topics/TimeOfDay.js"
 import { toiletriesHTML } from "./Topics/Toiletries.js"
 import { toolsHTML } from "./Topics/Tools.js"
 import { treesHTML } from "./Topics/Trees.js"
 import { vehiclesHTML } from "./Topics/Vehicles.js"
 import { weathersHTML } from "./Topics/Weathers.js"
-import { windowTintHTML } from "./Topics/WindowTint.js"
+import { windowTintsHTML } from "./Topics/WindowTint.js"
 import { yogaPosesHTML } from "./Topics/YogaPoses.js"
+import { encouragementList } from "./Encouragement.js"
 
 
 
@@ -45,7 +47,7 @@ export const Madlibs = () => {
         ${aromasHTML()}
         ${beatlesHTML()}
         ${condimentsHTML()}
-        ${danceMoviesHTML()}
+        ${danceMovesHTML()}
         ${drinkingGlassHTML()}
         ${eightiesMoviesHTML()}
         ${famousRevolutionsHTML()}
@@ -57,7 +59,7 @@ export const Madlibs = () => {
         ${illnessesHTML()}
         ${legumesHTML()}
         ${locationsHTML()}
-        ${loomHTML()}
+        ${loomsHTML()}
         ${mountainRangesHTML()}
         ${patternsHTML()}
         ${picklesHTML()}
@@ -76,13 +78,13 @@ export const Madlibs = () => {
         ${treesHTML()}
         ${vehiclesHTML()}
         ${weathersHTML()}
-        ${windowTintHTML()}
+        ${windowTintsHTML()}
         ${yogaPosesHTML()}
 
         </div>
         
         <div id="encouraging">
-
+        ${encouragementList()}
         </div>
     `
 }

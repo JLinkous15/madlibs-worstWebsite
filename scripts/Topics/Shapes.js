@@ -7,7 +7,7 @@ export const shapesHTML = () => {
     let html = `<label for="shapes">Choose a Shape:</label>
     `
     if(shapes.length <= 3){
-        html += `<ul>`
+        html += `<ul id="questions">`
         const tempHTML = shapes.map(shape=>
             `<li><input type="radio" name="shapes" value="${shape.id}"/> ${shape.type}</li>`
             )

@@ -7,7 +7,7 @@ export const precipitationsHTML = () => {
     let html = `<label for="precipitations">Choose a Precipitation:</label>
     `
     if(precipitations.length <= 3){
-        html += `<ul>`
+        html += `<ul id="questions">`
         const tempHTML = precipitations.map(precipitation=>
             `<li><input type="radio" name="precipitations" value="${precipitation.id}"/> ${precipitation.type}</li>`
             )

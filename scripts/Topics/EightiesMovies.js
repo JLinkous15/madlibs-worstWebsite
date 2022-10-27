@@ -8,7 +8,7 @@ export const eightiesMoviesHTML = () => {
     `
     if (movies.length <= 3) {
         
-        html += `<ul>`
+        html += `<ul id="questions">`
         const tempHTML = movies.map(movie=>
             `<li><input type="radio" name="movies" value="${movie.id}"/> ${movie.type}</li>`
             )

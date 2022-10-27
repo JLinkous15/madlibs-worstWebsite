@@ -7,7 +7,7 @@ export const preciousMetalsHTML = () => {
     let html = `<label for="preciousMetals">Choose a Location:</label>
     `
     if(preciousMetals.length <= 3){
-        html += `<ul>`
+        html += `<ul id="questions">`
         const tempHTML = preciousMetals.map(preciousMetal=>
             `<li><input type="radio" name="preciousMetals" value="${preciousMetal.id}"/> ${preciousMetal.type}</li>`
             )
