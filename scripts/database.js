@@ -3,6 +3,7 @@ const database = {
     locations: [
         {
             id: 1,
+
             type: "Muscle Beach",
         },
         {
@@ -37,6 +38,7 @@ const database = {
             id: 9,
             type: "Great Salt Lake",
         },
+
 
     ],
     historicalfigures: [
@@ -168,6 +170,7 @@ const database = {
         },
         {
             id: 2,
+
             type: "night",
 
         },
@@ -530,7 +533,6 @@ const database = {
     ],
 
 
-
     encouragements: [
         {
             id: 1,
@@ -684,4 +686,28 @@ export const getBodiesOfWater = () => {
 export const getHolidays = () => {
     return database.holidays.map(holiday => ({ ...holiday }))
 
+}
+
+export const getLocations = () => {
+    return database.locations.map(location => ({...location}))
+}
+
+export const getTrees = () => {
+    return database.trees.map(tree => ({...tree}))
+}
+
+export const getFoods = () => {
+    return database.foods.map(food => ({...food}))
+}
+
+export const getAnimals = () => {
+    return database.animals.map(animal => ({...animal}))
+}
+
+export const getFigures = () => {
+    return database.historicalfigures.map(figure => ({...figure}))
+}
+
+export const getVehicles = () => {
+    return database.vehicles.map(vehicle => ({...vehicle}))
 }
