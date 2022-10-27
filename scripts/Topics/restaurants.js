@@ -1,0 +1,1 @@
+import { getRestaurants } from "../database.js";
