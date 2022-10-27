@@ -1,0 +1,1 @@
+import { getAnimals } from "../database.js";
