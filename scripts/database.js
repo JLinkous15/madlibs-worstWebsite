@@ -944,7 +944,7 @@ export const getFoods = () => {
     return database.foods.map(food => ({ ...food }))
 
 }
-export const getTimeOfDay = () => {
+export const getTimeOfDays = () => {
     return database.timeOfDay.map(time => ({ ...time }))
 
 }
