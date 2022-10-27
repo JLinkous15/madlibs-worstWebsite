@@ -1,12 +1,12 @@
 import { getFoods } from "../database.js"
 
-
 const foods = getFoods()
+
 export const foodsHTML = () => {
     
-    let html = `<label for="foods">Choose a Location:</label>
+    let html = `<label for="foods">Choose a Food:</label>
     `
-    if(foods.length <= 3){
+    if (foods.length <= 3){
         html += `<ul>`
         const tempHTML = foods.map(food=>
             `<li><input type="radio" name="foods" value="${food.id}"/> ${food.name}</li>`
