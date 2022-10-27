@@ -237,52 +237,42 @@ const database = {
         {
             id: 1,
             type: "fragrant",
-            display: 2
         },
         {
             id: 2,
             type: "fruity",
-            display: 2
         },
         {
             id: 3,
             type: "citrus",
-            display: 2
         },
         {
             id: 4,
             type: "woody",
-            display: 2
         },
         {
             id: 5,
             type: "chemical",
-            display: 2
         },
         {
             id: 6,
             type: "sweet",
-            display: 2
         },
         {
             id: 7,
             type: "minty",
-            display: 2
         },
         {
             id: 8,
             type: "toasted",
-            display: 2
         },
         {
             id: 9,
             type: "pungent",
-            display: 2
         },
         {
             id: 10,
             type: "decayed",
-            display: 2
         }
 
     ],
@@ -290,52 +280,42 @@ const database = {
         {
             id: 1,
             type: "ladybug beatle",
-            display: 2
         },
         {
             id: 2,
             type: "stag beatle",
-            display: 2
         },
         {
             id: 3,
             type: "scarab beatle",
-            display: 2
         },
         {
             id: 4,
             type: "colorado potato beatle",
-            display: 2
         },
         {
             id: 5,
             type: "ground beatle",
-            display: 2
         },
         {
             id: 6,
             type: "hercules beatle",
-            display: 2
         },
         {
             id: 7,
             type: "weevil beatle",
-            display: 2
         },
         {
             id: 8,
             type: "mealworm beatle",
-            display: 2
         },
         {
             id: 9,
             type: "longhorn beatle",
-            display: 2
         },
         {
             id: 10,
             type: "leaf beatle",
-            display: 2
         }
         ],
     eightiesMovies: [
@@ -1048,4 +1028,8 @@ export const getPlanets = () => {
 
 export const getIllnesses = () => { 
     return database.illnesses.map(illness => ({...illness}))
+}
+
+export const getCondiments = () => {
+    return database.condiments.map(condiment => ({...condiment}))
 }
