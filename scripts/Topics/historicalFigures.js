@@ -1,0 +1,1 @@
+import { gethistoricalFigures } from "../database.js";

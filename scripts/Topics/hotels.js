@@ -1,0 +1,1 @@
+import { getHotels } from "../database.js";
