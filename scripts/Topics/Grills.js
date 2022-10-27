@@ -8,7 +8,7 @@ export const grillsHTML = () => {
     `
     if (grills.length <= 3) {
         
-        html += `<ul>`
+        html += `<ul id="questions">`
         const tempHTML = grills.map(grill=>
             `<li><input type="radio" name="grills" value="${grill.id}"/> ${grill.type}</li>`
             )

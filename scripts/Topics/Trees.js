@@ -2,12 +2,13 @@ import { getTrees } from "../database.js"
 
 
 const trees = getTrees()
+
 export const treesHTML = () => {
     
     let html = `<label for="trees">Choose a Tree:</label>
     `
     if(trees.length <= 3){
-        html += `<ul>`
+        html += `<ul id="questions">`
         const tempHTML = trees.map(tree=>
             `<li><input type="radio" name="trees" value="${tree.id}"/> ${tree.name}</li>`
             )

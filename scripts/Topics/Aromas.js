@@ -3,12 +3,12 @@ import { getAromas } from "../database.js";
 
 const aromas = getAromas()
 
-export const aromaHTML = () => {
+export const aromasHTML = () => {
     
     let html = `<label for="aroma">Choose an aroma!:</label>
     `
     if(aromas.length <= 3){
-        html += `<ul>`
+        html += `<ul id="questions">`
         const tempHTML = aromas.map(aroma=>
             `<li><input type="radio" name="aromas" value="${aroma.id}"/> ${aroma.type}</li>`
             )

@@ -7,7 +7,7 @@ export const sportsHTML = () => {
     let html = `<label for="sports">Choose a Sport:</label>
     `
     if(sports.length <= 3){
-        html += `<ul>`
+        html += `<ul id="questions">`
         const tempHTML = sports.map(sport=>
             `<li><input type="radio" name="sports" value="${sport.id}"/> ${sport.type}</li>`
             )

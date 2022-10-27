@@ -1,10 +1,15 @@
 *{
-    background: #000;
-    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+#logo{
+    height: 250px;
+
 }
 
-#logo{
-    width: 250px;
+body{
+    background-image: url("../images/starsBG.jpg");
+    background-repeat:repeat;
 }
 
 #events{
@@ -23,14 +28,18 @@ select{
 }
 
 label{
-    background-color: #7f7f7f;
     color: #999;
 }
 
-ul{
-    list-style: none;
-    background-color: #7f7f7f;
+select:hover{
+    background-color: #999;
     color: #999;
+
+}
+
+#questions{
+    list-style: none;
+
 }
 
 li{
@@ -42,6 +51,17 @@ li{
     color: red;
 }
 
+.affirmation{
+    margin: 20px;
+    padding: 20px;
+}
+#encouragements{
+    display: flex;
+    list-style: none;
+    width: 250px;
+    
+}
+
 .gotcha{
     background-color: orange;
     color: white;
@@ -51,4 +71,3 @@ li{
     border-right: brown solid 2px;
     border-bottom: brown solid 2px;
 }
-

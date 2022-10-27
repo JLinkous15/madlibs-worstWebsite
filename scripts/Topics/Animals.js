@@ -7,9 +7,9 @@ export const animalsHTML = () => {
     let html = `<label for="animals">Choose an Animal:</label>
     `
     if(animals.length <= 3){
-        html += `<ul>`
+        html += `<ul id="questions">`
         const tempHTML = animals.map(animal=>
-            `<li><input type="radio" name="animal" value="${animal.id}"/> ${animal.type}</li>`
+            `<li class="answers"><input type="radio" name="animal" value="${animal.id}"/> ${animal.type}</li>`
             )
         html += `${tempHTML.join("")}</ul>`
     } else {

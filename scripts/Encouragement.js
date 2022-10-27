@@ -5,6 +5,7 @@ const encouragements = getEncouragements()
 export const encouragementList = () => {
     return `
     <ul id="encouragements">
-    ${encouragements.map(encouragement=>`<li class="affirmation">${encouragement.text}</li>`)}
+    ${encouragements.map(taco=>
+        `<li class="affirmation">${taco.motivator}</li>`)}
     </ul>`
 }

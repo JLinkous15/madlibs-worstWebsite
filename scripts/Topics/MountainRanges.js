@@ -7,7 +7,7 @@ export const mountainRangesHTML = () => {
     let html = `<label for="mountainRanges">Choose a Location:</label>
     `
     if(mountainRanges.length <= 3){
-        html += `<ul>`
+        html += `<ul id="questions">`
         const tempHTML = mountainRanges.map(mountainRange=>
             `<li><input type="radio" name="mountainRanges" value="${mountainRange.id}"/> ${mountainRange.type}</li>`
             )

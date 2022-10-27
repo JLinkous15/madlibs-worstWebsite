@@ -7,7 +7,7 @@ export const danceMovesHTML = () => {
     let html = `<label for="danceMoves">Choose a Dance Move:</label>
     `
     if(danceMoves.length <= 3){
-        html += `<ul>`
+        html += `<ul id="questions">`
         const tempHTML = danceMoves.map(danceMove=>
             `<li><input type="radio" name="danceMoves" value="${danceMove.id}"/> ${danceMove.type}</li>`
             )

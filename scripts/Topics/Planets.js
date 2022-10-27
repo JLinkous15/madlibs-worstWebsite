@@ -7,7 +7,7 @@ export const planetsHTML = () => {
     let html = `<label for="planets">Choose a Location:</label>
     `
     if(planets.length <= 3){
-        html += `<ul>`
+        html += `<ul id="questions">`
         const tempHTML = planets.map(planet=>
             `<li><input type="radio" name="planets" value="${planet.id}"/> ${planet.type}</li>`
             )

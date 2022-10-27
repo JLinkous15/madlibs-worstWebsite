@@ -7,7 +7,7 @@ export const loomsHTML = () => {
     let html = `<label for="looms">Choose a Location:</label>
     `
     if(looms.length <= 3){
-        html += `<ul>`
+        html += `<ul id="questions">`
         const tempHTML = looms.map(loom=>
             `<li><input type="radio" name="looms" value="${loom.id}"/> ${loom.type}</li>`
             )

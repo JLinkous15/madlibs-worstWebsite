@@ -7,7 +7,7 @@ export const picklesHTML = () => {
     let html = `<label for="pickles">Choose a Location:</label>
     `
     if(pickles.length <= 3){
-        html += `<ul>`
+        html += `<ul id="questions">`
         const tempHTML = pickles.map(pickle=>
             `<li><input type="radio" name="pickles" value="${pickle.id}"/> ${pickle.type}</li>`
             )
