@@ -3,76 +3,66 @@ const database = {
     locations: [
         {
             id: 1,
-            name: "Muscle Beach",
-            display: 1
+            name: "Muscle Beach"
 
         },
         {
             id: 2,
-            type: "Great Smokey Mountains",
-            display: 1
+            name: "Great Smokey Mountains"
 
         },
         {
             id: 3,
-            type: "The Mall of America",
-            display: 1
+            name: "The Mall of America"
 
         },
         {
             id: 4,
-            type: "Four Seasons Total Landscaping",
-            display: 1
-
+            name: "Four Seasons Total Landscaping",
         },
         {
             id: 5,
-            type: "the bathroom",
-            display: 1
+            name: "the bathroom"
 
         },
         {
             id: 6,
-            type: "cloud-base",
-            display: 1,
+            name: "cloud-base"
 
         },
         {
             id: 7,
-            type: "brewery down the road",
-            display: 1
+            name: "brewery down the road"
 
         },
         {
             id: 8,
-            type: "the bottom of the Atlantic ocean",
-            display: 1
+            name: "the bottom of the Atlantic ocean"
 
         },
         {
             id: 9,
-            type: "Great Salt Lake",
-            display: 1
+            name: "Great Salt Lake"
 
-        },
+        }
 
     ],
     historicalfigures: [
         {
             id: 1,
-            type: "Ramses II",
+            name: "Ramses II",
             display: 2
 
         },
         {
             id: 2,
-            type: "John Long",
+            name: "John Long",
             display: 2
 
         },
         {
             id: 3,
-            type: "Big Bird",
+            name: "Big Bird",
             display: 2
 
         },
@@ -80,7 +70,7 @@ const database = {
     vehicles: [
         {
             id: 9,
-            type: "Great Salt Lake",
+            name: "Great Salt Lake",
             display: 1
 
         },
@@ -98,19 +88,19 @@ const database = {
 
         {
             id: 1,
-            type: "morning",
+            name: "morning",
             display: 2
 
         },
         {
             id: 2,
-            type: "noon",
+            name: "noon",
             display: 2
 
         },
         {
             id: 2,
-            type: "night",
+            name: "night",
             display: 2
 
         },
@@ -119,112 +109,60 @@ const database = {
     trees : [
         {
             id: 1,
-            type: "cedar",
-            display: 1
-
+            name: "cedar", 
         },
         {
             id: 2,
-            type: "tulip poplar",
-            display: 1
-
+            name: "tulip poplar", 
         },
         {
             id: 3,
-            type: "maple",
-            display: 1
-
+            name: "maple", 
         },
         {
             id: 4,
-            type: "pine",
-            display: 1
-
+            name: "pine", 
         },
         {
             id: 5,
-            type: "white oak",
-            display: 1
-
+            name: "white oak", 
         },
         {
             id: 6,
-            type: "princess",
-            display: 1
-
+            name: "princess", 
         },
         {
             id: 7,
-            type: "red oak",
-            display: 1
-
+            name: "red oak", 
         },
         {
             id: 8,
-            type: "ginco",
-            display: 1
-
+            name: "ginco", 
         },
         {
             id: 9,
-            type: "beech",
-            display: 1
-
+            name: "beech", 
         },
         {
             id: 10,
-            type: "coastal redwood",
-            display: 1
-
+            name: "coastal redwood", 
         },
         {
             id: 11,
-            type: "sycamore",
-            display: 1
-
+            name: "sycamore", 
         },
         {
             id: 12,
-            type: "ash",
-            display: 1
-
+            name: "ash", 
         },
         {
             id: 13,
-            type: "apple",
-            display: 1
-
+            name: "apple", 
         },
         {
             id: 14,
-            type: "American chestnut",
-            display: 1
-
+            name: "American chestnut", 
         },
-    ],
-    locations: [
-        {
-            id: 1,
-
-        }
-    ],
-    locations: [
-        {
-            id: 1,
-
-        }
-    ],
-    locations: [
-        {
-            id: 1,
-
-        }
-    ],
-    locations: [
-        {
-            id: 1,
-
-        }
     ],
 
 
@@ -317,4 +255,28 @@ export const getEncouragements = () => {
 export const getMadResponse = () => {
     return database.madResponse.map(madResponse => ({...madResponse}))
 
+}
+
+export const getLocations = () => {
+    return database.locations.map(location => ({...location}))
+}
+
+export const getTrees = () => {
+    return database.trees.map(tree => ({...tree}))
+}
+
+export const getFoods = () => {
+    return database.foods.map(food => ({...food}))
+}
+
+export const getAnimals = () => {
+    return database.animals.map(animal => ({...animal}))
+}
+
+export const getFigures = () => {
+    return database.historicalfigures.map(figure => ({...figure}))
+}
+
+export const getVehicles = () => {
+    return database.vehicles.map(vehicle => ({...vehicle}))
 }
