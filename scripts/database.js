@@ -1,58 +1,46 @@
 const database = {
-
+events: {
     locations: [
         {
             id: 1,
-            name: "Muscle Beach",
-            display: 1
-
+            name: "Muscle Beach"
         },
         {
             id: 2,
-            type: "Great Smokey Mountains",
-            display: 1
+            type: "Great Smokey Mountains"
 
         },
         {
             id: 3,
-            type: "The Mall of America",
-            display: 1
+            type: "The Mall of America"
 
         },
         {
             id: 4,
-            type: "Four Seasons Total Landscaping",
-            display: 1
-
+            type: "Four Seasons Total Landscaping"
         },
         {
             id: 5,
-            type: "the bathroom",
-            display: 1
+            type: "the bathroom"
 
         },
         {
             id: 6,
-            type: "cloud-base",
-            display: 1,
+            type: "cloud-base"
 
         },
         {
             id: 7,
-            type: "brewery down the road",
-            display: 1
+            type: "brewery down the road"
 
         },
         {
             id: 8,
-            type: "the bottom of the Atlantic ocean",
-            display: 1
-
+            type: "the bottom of the Atlantic ocean"
         },
         {
             id: 9,
-            type: "Great Salt Lake",
-            display: 1
+            type: "Great Salt Lake"
 
         },
 
@@ -60,28 +48,23 @@ const database = {
     historicalfigures: [
         {
             id: 1,
-            type: "Ramses II",
-            display: 2
+            type: "Ramses II"
 
         },
         {
             id: 2,
-            type: "John Long",
-            display: 2
+            type: "John Long"
 
         },
         {
             id: 3,
-            type: "Big Bird",
-            display: 2
-
+            type: "Big Bird"
         },
     ],
     vehicles: [
         {
             id: 9,
-            type: "Great Salt Lake",
-            display: 1
+            type: "Great Salt Lake"
 
         },
 
@@ -155,80 +138,145 @@ const database = {
         },
         {
             id: 7,
-            type: "red oak",
-            display: 1
+            type: "red oak"
 
         },
         {
             id: 8,
-            type: "ginco",
-            display: 1
+            type: "ginco"
 
         },
         {
             id: 9,
-            type: "beech",
-            display: 1
+            type: "beech"
 
         },
         {
             id: 10,
-            type: "coastal redwood",
-            display: 1
+            type: "coastal redwood"
 
         },
         {
             id: 11,
-            type: "sycamore",
-            display: 1
+            type: "sycamore"
 
         },
         {
             id: 12,
-            type: "ash",
-            display: 1
+            type: "ash"
 
         },
         {
             id: 13,
-            type: "apple",
-            display: 1
+            type: "apple"
 
         },
         {
             id: 14,
-            type: "American chestnut",
-            display: 1
+            type: "American chestnut"
 
         },
     ],
-    locations: [
-        {
-            id: 1,
-
-        }
+    eightiesMovies: [
+        { id: 1, type: "Beetle Juice"},
+        { id: 2, type: "Rain Man" },
+        { id: 3, type: "Blade Runner" },
+        { id: 4, type: "Stand By Me" },
+        { id: 5, type: "Flashdance" }, 
+    ], 
+    danceMoves: [
+        { id: 1, type: "Moonwalk" },
+        { id: 2, type: "The Robot"},
+        { id: 3, type: "Plier"},
+        { id: 4, type: "Vogue"},
+        { id: 5, type: "The Twist" }, 
     ],
-    locations: [
-        {
-            id: 1,
-
-        }
+    condiments: [ 
+        { id: 1, type: "eggplant relish" },
+        { id: 2, type: "spicy plum paste"},
+        { id: 3, type: "cayenne cinnamon caramel sauce" }, 
+        { id: 4, type: "nut butter" },  
+        { id: 5, type: "pumpkin hot sauce" }, 
+        { id: 6, type: "fuity vinegar sprays"}
     ],
-    locations: [
-        {
-            id: 1,
-
-        }
+    shapes: [ 
+        { id: 1, type: "nonagon" },
+        { id: 2, type: "ellipse" },
+        { id: 3, type: "crescent" },
+        { id: 4, type: "trapezium" },
+        { id: 5, type: "octagon" },
+        { id: 6, type: "parallelogram" }, 
+        { id: 7, type: "square" }
+    ], 
+    grills: [
+        { id: 1, type: "George Forman"},
+        { id: 2, type: "Big Green Egg"},
+        { id: 3, type: "open fire" },
+        { id: 4, type: "propane gas" },
+        { id: 5, type: "charcoal" }, 
     ],
-    locations: [
-        {
-            id: 1,
-
-        }
+    animals: [ 
+        { id: 1, type: "llama"}, 
+        { id: 2, type: "octopus"}, 
+        { id: 3, type: "camel"}, 
+        {id: 4, type: "owl"}, 
+        {id: 5, type: "otter"}, 
+        {id: 6, type: "whale"}
     ],
-
-
-
+    looms: [
+        { id: 1, type: "handloom" },
+        { id: 2, type: "frameloom"},
+        { id: 3, type: "back strap loom" }
+    ],
+    windowTints: [ 
+        { id: 1, type: "carbon tint" },
+        { id: 2, type: "hybrid tint" },
+        { id: 3, type: "ceramic tint"}
+    ],
+    drinkingGlass: [ 
+        { id: 1, type: "tumbler" },
+        { id: 2, type: "mug"},
+        { id: 3, type: "pint glass" }, 
+    ],
+    yogaPoses: [ 
+        { id: 1, type: "tree pose" },
+        { id: 2, type: "cat/cow"},
+        { id: 3, type: "eagle pose" }, 
+        { id: 3, type: "mountain" }
+    ],
+    sausages: [ 
+        { id: 1, type: "sweet Italian"},
+        { id: 2, type: "breakfast"},
+        { id: 3, type: "andouille" }
+    ], 
+    patterns: [ 
+        { id: 1, type: "spiral" },
+        { id: 2, type: "symmetry"},
+        { id: 3, type: "flow" }, 
+        { id: 4, type: "tessellations" }
+    ], 
+    toiletries: [ 
+        { id: 1, type: "toothbrush" },
+        { id: 2, type: "moisturizer"},
+        { id: 3, type: "razor" }, 
+        { id: 4, type: "deodorant" },
+        { id: 5, type: "comb" },
+        { id: 6, type: "bubble bath" }
+    ], 
+    planets: [ 
+        { id: 1, type: "Mega-Earth Kepler-10c" },
+        { id: 2, type: "Episolon Eridani b"},
+        { id: 3, type: "WASP-12b" }
+    ], 
+    illnesses: [ 
+        { id: 1, type: "pink eye" },
+        { id: 2, type: "cold" },
+        { id: 3, type: "allergies" }, 
+        { id: 4, type: "headaches" }, 
+        { id: 5, type: "flu" }
+    ]
+},
+  
     encouragements: [
         {
             id: 1,
@@ -317,4 +365,60 @@ export const getEncouragements = () => {
 export const getMadResponse = () => {
     return database.madResponse.map(madResponse => ({...madResponse}))
 
+}
+
+export const getEightiesMovies = () => { 
+    return database.eightiesMovies.map(movie => ({...movie}))
+}
+
+export const getDanceMoves = () => { 
+    return database.danceMoves.map(move => ({...move}))
+}
+
+export const getGrills = () => { 
+    return database.getGrills.map(grill => ({...grill}))
+}
+
+export const getAnimals = () => { 
+    return database.animals.map(animal => ({...animal}))
+}
+
+export const getLooms = () => { 
+    return database.looms.map(loom => ({...loom }))
+}
+
+export const getWindowTints = () => { 
+    return database.windowTints.map(tint => ({...tint}))
+}
+
+export const getDrinkingGlasses = () => { 
+    return database.drinkingGlass.map(glass => ({...glass}))
+}
+
+export const getYogaPoses = () => { 
+    return database.yogaPoses.map(pose => ({...pose}))
+}
+
+export const getSausages = () => { 
+    return database.sausages.map(sausage => ({...sausage}))
+}
+
+export const getPatterns = () => { 
+    return database.patterns.map(pattern => ({...pattern}))
+}
+
+export const getShapes = () => { 
+    return database.shapes.map(shape => ({...shape}))
+}
+
+export const getToiletries = () => { 
+    return database.toiletries.map(toiletry => ({...toiletry}))
+}
+
+export const getPlanets = () => { 
+    return database.planets.map(planet => ({...planet}))
+}
+
+export const getIllnesses = () => { 
+    return database.illnesses.map(illness => ({...illness}))
 }
