@@ -3,57 +3,39 @@ const database = {
     locations: [
         {
             id: 1,
-            name: "Muscle Beach",
-            display: 1
-
+            type: "Muscle Beach",
         },
         {
             id: 2,
             type: "Great Smokey Mountains",
-            display: 1
-
         },
         {
             id: 3,
             type: "The Mall of America",
-            display: 1
-
         },
         {
             id: 4,
             type: "Four Seasons Total Landscaping",
-            display: 1
-
         },
         {
             id: 5,
             type: "the bathroom",
-            display: 1
-
         },
         {
             id: 6,
             type: "cloud-base",
-            display: 1,
-
         },
         {
             id: 7,
             type: "brewery down the road",
-            display: 1
-
         },
         {
             id: 8,
             type: "the bottom of the Atlantic ocean",
-            display: 1
-
         },
         {
             id: 9,
             type: "Great Salt Lake",
-            display: 1
-
         },
 
     ],
@@ -61,37 +43,114 @@ const database = {
         {
             id: 1,
             type: "Ramses II",
-            display: 2
-
         },
         {
             id: 2,
             type: "John Long",
-            display: 2
-
         },
         {
             id: 3,
             type: "Big Bird",
-            display: 2
-
         },
     ],
     vehicles: [
         {
             id: 9,
-            type: "Great Salt Lake",
-            display: 1
-
+            type: "lifted ford truck",
+        },
+        {
+            id: 12,
+            type: "purple sedan",
+        },
+        {
+            id: 13,
+            type: "toyota camry",
+        },
+        {
+            id: 14,
+            type: "food truck",
         },
 
     ],
 
     animals: [
+        {
+            id: 1,
+            type: "grizzly bear",
+        },
+        {
+            id: 2,
+            type: "silkie rooster",
+        },
+        {
+            id: 3,
+            type: "sugar glider",
+        },
+        {
+            id: 4,
+            type: "red-tailed hawk",
+        },
+        {
+            id: 5,
+            type: "little red fox",
+        },
+        {
+            id: 6,
+            type: "white-tailed deer",
+        },
+        {
+            id: 7,
+            type: "angora goat",
+        },
+        {
+            id: 8,
+            type: "armadillo",
+        },
+        {
+            id: 9,
+            type: "sturgeon",
+        },
+        {
+            id: 10,
+            type: "armyworm",
+        },
+        {
+            id: 11,
+            type: "bloodhound",
+        },
+        {
+            id: 12,
+            type: "cheetah",
+        },
+        {
+            id: 13,
+            type: "crab",
+
+
+        },
+        {
+            id: 14,
+            type: "zebra",
+
+
+        },
 
     ],
 
     foods: [
+        {
+            id: 12,
+            type: "lamp gyro",
+        },
+        {
+            id: 13,
+            type: "apple",
+
+        },
+        {
+            id: 14,
+            type: "roasted marshmellows",
+        },
 
     ],
     timeOfDay: [
@@ -99,132 +158,375 @@ const database = {
         {
             id: 1,
             type: "morning",
-            display: 2
+
 
         },
         {
             id: 2,
             type: "noon",
-            display: 2
 
         },
         {
             id: 2,
             type: "night",
-            display: 2
 
         },
 
     ],
-    trees : [
+    trees: [
         {
             id: 1,
             type: "cedar",
-            display: 1
+
 
         },
         {
             id: 2,
             type: "tulip poplar",
-            display: 1
 
         },
         {
             id: 3,
             type: "maple",
-            display: 1
 
         },
         {
             id: 4,
             type: "pine",
-            display: 1
+
 
         },
         {
             id: 5,
             type: "white oak",
-            display: 1
 
         },
         {
             id: 6,
             type: "princess",
-            display: 1
 
         },
         {
             id: 7,
             type: "red oak",
-            display: 1
+
 
         },
         {
             id: 8,
             type: "ginco",
-            display: 1
+
 
         },
         {
             id: 9,
             type: "beech",
-            display: 1
+
 
         },
         {
             id: 10,
             type: "coastal redwood",
-            display: 1
+
 
         },
         {
             id: 11,
             type: "sycamore",
-            display: 1
+
 
         },
         {
             id: 12,
             type: "ash",
-            display: 1
+
 
         },
         {
             id: 13,
             type: "apple",
-            display: 1
+
 
         },
         {
             id: 14,
             type: "American chestnut",
-            display: 1
+
 
         },
     ],
-    locations: [
+    sandwiches: [
         {
             id: 1,
+            type: "grilled bologne",
+
+
+        },
+        {
+            id: 2,
+            type: "five dollar footlong",
+
+
+        },
+        {
+            id: 3,
+            type: "turkey and goat cheese on rye",
+
+
+        },
+    ],
+    tools: [
+        {
+            id: 1,
+            type: "hammer",
+
+
+        },
+        {
+            id: 2,
+            type: "chisel",
+
+
+        },
+        {
+            id: 3,
+            type: "leaf blower",
+
+
+        },
+        {
+            id: 4,
+            type: "phillips head screw driver",
+
+
+        },
+    ],
+    restaurants: [
+        {
+            id: 1,
+            type: "Wendy's",
+
+
+        },
+        {
+            id: 2,
+            type: "Chili's",
+
+
+        },
+        {
+            id: 3,
+            type: "Cook Out",
+
+
+        },
+        {
+            id: 4,
+            type: "Applebees",
+
+
+        },
+        {
+            id: 5,
+            type: "Olive Garden",
+
+
+        },
+    ],
+    countries: [
+        {
+            id: 1,
+            type: "Africa",
+
+
+        },
+        {
+            id: 2,
+            type: "Malaysia",
+
+
+        },
+        {
+            id: 3,
+            type: "France",
+
+
+        },
+        {
+            id: 4,
+            type: "Canada",
+
+        },
+        {
+            id: 2,
+            type: "Germany",
+
+
+        },
+        {
+            id: 3,
+            type: "Greece",
+
+
+        },
+        {
+            id: 4,
+            type: "Chile",
+
+
+        },
+
+    ],
+    pickleTypes: [
+        {
+            id: 1,
+            type: "half-sour pickle",
+
+
+        },
+        {
+            id: 2,
+            type: "cornichon pickle",
+
+
+        },
+        {
+            id: 3,
+            type: "fermented pickle",
+
+
+        },
+
+    ],
+    sports: [
+        {
+            id: 1,
+            type: "ultra running",
+
+        },
+        {
+            id: 2,
+            type: "rock-climbing",
+
+
+        },
+        {
+            id: 3,
+            type: "mountain biking",
+
+
+        },
+        {
+            id: 4,
+            type: "hobby horse",
+
+
+        },
+
+    ],
+    hotels: [
+        {
+            id: 1,
+            type: "Holiday Inn",
+
+
+        },
+        {
+            id: 2,
+            type: "Hilton",
+
+
+        },
+        {
+            id: 3,
+            type: "Best Western",
+
 
         }
     ],
-    locations: [
+    legumes: [
         {
             id: 1,
+            type: "beans",
 
-        }
+
+        },
+        {
+            id: 2,
+            type: "lentils",
+
+
+        },
+        {
+            id: 3,
+            type: "lupins",
+
+
+        },
+        {
+            id: 4,
+            type: "peas",
+
+
+        },
+        {
+            id: 5,
+            type: "peanuts",
+
+        },
+
     ],
-    locations: [
+    bodiesOfWater: [
         {
             id: 1,
+            type: "Tennessee River",
 
-        }
+        },
+        {
+            id: 2,
+            type: "Lake Okeechobee",
+
+
+        },
+        {
+            id: 3,
+            type: "Lake Michigan",
+
+        },
+        {
+            id: 4,
+            type: "Gulf of Mexico",
+
+
+        },
+
     ],
-    locations: [
+    holidays: [
         {
             id: 1,
+            type: "Christmas",
 
-        }
+
+        },
+        {
+            id: 2,
+            type: "Valentines Day",
+
+
+        },
+        {
+            id: 3,
+            type: "National Donut Day",
+
+
+        },
+        {
+            id: 4,
+            type: "Halloween",
+
+
+        },
+
     ],
 
 
@@ -271,7 +573,7 @@ const database = {
             motivator: "No wrong answers exist when you let go of self preservation."
         },
         {
-            id: 11, 
+            id: 11,
             motivator: "Moving through time is akin to moving through space, it requires intentionality."
         },
         {
@@ -311,10 +613,75 @@ const database = {
 }
 
 export const getEncouragements = () => {
-    return database.encouragements.map(encouragement => ({...encouragement}))
+    return database.encouragements.map(encouragement => ({ ...encouragement }))
 }
 
-export const getMadResponse = () => {
-    return database.madResponse.map(madResponse => ({...madResponse}))
+export const getLocations = () => {
+    return database.locations.map(location => ({ ...location }))
+
+}
+export const gethistoricalFigures = () => {
+    return database.historicalfigures.map(historicalFigure => ({ ...historicalFigure }))
+
+}
+export const getVehicles = () => {
+    return database.vehicles.map(vehicle => ({ ...vehicle }))
+
+}
+export const getAnimals = () => {
+    return database.animals.map(animal => ({ ...animal }))
+
+}
+export const getFoods = () => {
+    return database.foods.map(food => ({ ...food }))
+
+}
+export const getTimeOfDay = () => {
+    return database.timeOfDay.map(time => ({ ...time }))
+
+}
+export const getTrees = () => {
+    return database.trees.map(tree => ({ ...tree }))
+
+}
+
+export const getSandwiches = () => {
+    return database.sandwiches.map(sandwiches => ({ ...sandwiches }))
+
+}
+export const getTools = () => {
+    return database.tools.map(tool => ({ ...tool }))
+
+}
+export const getRestaurants = () => {
+    return database.restaurants.map(restaurant => ({ ...restaurant }))
+
+}
+export const getCountries = () => {
+    return database.countries.map(country => ({ ...country }))
+
+}
+export const getPickles = () => {
+    return database.pickleTypes.map(pickle => ({ ...pickle }))
+
+}
+export const getSports = () => {
+    return database.sports.map(sport => ({ ...sport }))
+
+}
+export const getHotels = () => {
+    return database.hotels.map(hotel => ({ ...hotel }))
+
+}
+export const getLegumes = () => {
+    return database.legumes.map(legume => ({ ...legume }))
+
+}
+export const getBodiesOfWater = () => {
+    return database.bodiesOfWater.map(bodyOfWater => ({ ...bodyOfWater }))
+
+}
+export const getHolidays = () => {
+    return database.holidays.map(holiday => ({ ...holiday }))
 
 }
