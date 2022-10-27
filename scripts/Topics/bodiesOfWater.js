@@ -1,0 +1,1 @@
+import { getBodiesOfWater } from "../database.js";

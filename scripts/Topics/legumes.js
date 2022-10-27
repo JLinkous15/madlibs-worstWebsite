@@ -1,0 +1,1 @@
+import { getLegumes } from "../database.js";

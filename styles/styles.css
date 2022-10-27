@@ -1,4 +1,39 @@
-#mainContainer{
+*{
     background: #000;
     color: white;
+}
+
+#logo{
+    width: 250px;
+}
+
+#events{
+    display: flex;
+    flex-wrap: none;
+    background-color: #7f7f7f;
+    color: #7f7f7f;
+    padding: 20px;
+
+}
+
+select{
+    background-color: #999999;
+    color: #7f7f7f;
+    height: 2em;
+}
+
+label{
+    background-color: #7f7f7f;
+    color: #999;
+}
+
+ul{
+    list-style: none;
+    background-color: #7f7f7f;
+    color: #999;
+}
+
+li{
+    background-color: #7f7f7f;
+    color: #999;
 }
