@@ -2,11 +2,12 @@ import { getFigures } from "../database.js"
 
 
 const figures = getFigures()
-export const figuresHTML = () => {
+
+export const historicalFiguresHTML = () => {
     
-    let html = `<label for="figures">Choose a Location:</label>
+    let html = `<label for="figures">Choose a Figure:</label>
     `
-    if(figures.length <= 3){
+    if (figures.length <= 3){
         html += `<ul>`
         const tempHTML = figures.map(figure=>
             `<li><input type="radio" name="figures" value="${figure.id}"/> ${figure.name}</li>`

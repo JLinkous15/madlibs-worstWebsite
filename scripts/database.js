@@ -237,52 +237,42 @@ const database = {
         {
             id: 1,
             type: "fragrant",
-            display: 2
         },
         {
             id: 2,
             type: "fruity",
-            display: 2
         },
         {
             id: 3,
             type: "citrus",
-            display: 2
         },
         {
             id: 4,
             type: "woody",
-            display: 2
         },
         {
             id: 5,
             type: "chemical",
-            display: 2
         },
         {
             id: 6,
             type: "sweet",
-            display: 2
         },
         {
             id: 7,
             type: "minty",
-            display: 2
         },
         {
             id: 8,
             type: "toasted",
-            display: 2
         },
         {
             id: 9,
             type: "pungent",
-            display: 2
         },
         {
             id: 10,
             type: "decayed",
-            display: 2
         }
 
     ],
@@ -290,52 +280,42 @@ const database = {
         {
             id: 1,
             type: "ladybug beatle",
-            display: 2
         },
         {
             id: 2,
             type: "stag beatle",
-            display: 2
         },
         {
             id: 3,
             type: "scarab beatle",
-            display: 2
         },
         {
             id: 4,
             type: "colorado potato beatle",
-            display: 2
         },
         {
             id: 5,
             type: "ground beatle",
-            display: 2
         },
         {
             id: 6,
             type: "hercules beatle",
-            display: 2
         },
         {
             id: 7,
             type: "weevil beatle",
-            display: 2
         },
         {
             id: 8,
             type: "mealworm beatle",
-            display: 2
         },
         {
             id: 9,
             type: "longhorn beatle",
-            display: 2
         },
         {
             id: 10,
             type: "leaf beatle",
-            display: 2
         }
         ],
     eightiesMovies: [
@@ -404,7 +384,7 @@ const database = {
         { id: 1, type: "tree pose" },
         { id: 2, type: "cat/cow"},
         { id: 3, type: "eagle pose" }, 
-        { id: 3, type: "mountain" }
+        { id: 4, type: "mountain" }
     ],
     sausages: [ 
         { id: 1, type: "sweet Italian"},
@@ -661,12 +641,12 @@ const database = {
             display: 1
         },
         {
-            id: 2,
+            id: 3,
             type: "Hail",
             display: 1
         },
         {
-            id: 2,
+            id: 4,
             type: "Sleet",
             display: 1
         }
@@ -683,12 +663,12 @@ const database = {
             display: 1
         },
         {
-            id: 2,
+            id: 3,
             type: "hot",
             display: 1
         },
         {
-            id: 2,
+            id: 4,
             type: "cold",
             display: 1
         }
@@ -705,7 +685,7 @@ const database = {
             display: 1
         },
         {
-            id: 2,
+            id: 3,
             type: "Platinum",
             display: 1
         }   
@@ -715,13 +695,10 @@ const database = {
         {
             id: 1,
             type: "ultra running"
-
         },
         {
             id: 2,
             type: "rock-climbing"
-
-
         },
         {
             id: 3,
@@ -872,17 +849,17 @@ const database = {
         {
             id: 1,
             response: `
-            There once was a tale, 
-            of a little snail, 
-            who got lost in the forest and found some old rail. 
-            The little snail, 
-            followed the rail, 
-            leading it to a cavern of shale. 
-            Inch by inch, the light grew dimmer, 
-            with every slither, the halls moved slimmer. 
-            By the time the snail looked around, 
-            it was then melting into the ground.
-            `
+                        There once was a tale, 
+                        of a little snail, 
+                        who got lost in the forest and found some old rail. 
+                        The little snail, 
+                        followed the rail, 
+                        leading it to a cavern of shale. 
+                        Inch by inch, the light grew dimmer, 
+                        with every slither, the halls moved slimmer. 
+                        By the time the snail looked around, 
+                        it was then melting into the ground.
+                        `
         }
     ]
 }
@@ -1051,4 +1028,8 @@ export const getPlanets = () => {
 
 export const getIllnesses = () => { 
     return database.illnesses.map(illness => ({...illness}))
+}
+
+export const getCondiments = () => {
+    return database.condiments.map(condiment => ({...condiment}))
 }
