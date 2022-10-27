@@ -1,4 +1,4 @@
-import { getFoods } from "./database.js"
+import { getFoods } from "../database.js"
 
 
 const foods = getFoods()

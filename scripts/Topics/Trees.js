@@ -1,4 +1,4 @@
-import { getTrees } from "./database.js"
+import { getTrees } from "../database.js"
 
 
 const trees = getTrees()
