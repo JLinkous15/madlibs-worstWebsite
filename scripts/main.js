@@ -1,3 +1,4 @@
+
 import { MadLibs } from "./madlibs.js"
 
 const container = document.querySelector("#mainContainer") 
