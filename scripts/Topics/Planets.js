@@ -1,3 +1,3 @@
-import { getPlanets } from "./database.js"
+import { getPlanets } from "../database.js"
 
 const planets = getPlanets() 

@@ -1,3 +1,3 @@
-import { getLooms } from "./database.js"
+import { getLooms } from "../database.js"
 
 const looms = getLooms() 

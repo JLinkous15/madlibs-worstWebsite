@@ -1,3 +1,3 @@
-import { getIllnesses } from ".database.js"
+import { getIllnesses } from "../database.js"
 
 const illnesses = getIllnesses() 

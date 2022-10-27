@@ -1,4 +1,4 @@
-import { getFigures } from "./database.js"
+import { getFigures } from "../database.js"
 
 
 const figures = getFigures()

@@ -1,4 +1,4 @@
-import { getVehicles } from "./database.js"
+import { getVehicles } from "../database.js"
 
 
 const vehicles = getVehicles()

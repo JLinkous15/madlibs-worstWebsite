@@ -1,3 +1,3 @@
-import { getDanceMoves } from "./database.js"
+import { getDanceMoves } from "../database.js"
 
 const danceMovies = getDanceMovies() 

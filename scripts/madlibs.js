@@ -1,9 +1,9 @@
 import { locationsHTML } from "./Topics/Locations.js"
 import { treesHTML } from "./Topics/Trees.js"
-import { vehiclesHTML } from "./Topics/vehicles.js"
+import { vehiclesHTML } from "./Topics/Vehicles.js"
 import { figuresHTML } from "./Topics/HistoricalFigures.js"
 import { foodsHTML } from "./Topics/Foods.js"
-import { animalsHTML } from "./Topics/animals.js"
+// import { animalsHTML } from "./Topics/Animals.js"
 
 const locations = locationsHTML()
 
@@ -15,7 +15,7 @@ export const Madlibs = () => {
             ${vehiclesHTML()}
             ${figuresHTML()}
             ${foodsHTML()}
-            ${animalsHTML()}
+            
             
         </div>
         <div id="encouraging">

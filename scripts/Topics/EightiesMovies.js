@@ -1,4 +1,4 @@
-import {getEightiesMovies} from "./database.js"
+import {getEightiesMovies} from "../database.js"
 
 const movies = getEightiesMovies() 
 

@@ -1,3 +1,3 @@
-import { getGrills } from "./database.js"
+import { getGrills } from "../database.js"
 
 const grills = getGrills() 

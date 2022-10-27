@@ -1,10 +1,10 @@
-import { getSausages } from "./database.js"
+import { getSausages } from "../database.js"
 
-const sausages = getsausages()
+const sausages = getSausages()
 
 export const sausagesHTML = () => {
     
-    let html = `<label for="sausages">Choose a sausage:</label>
+    let html = `<label for="sausages">Choose a Sausage:</label>
     `
     if(sausages.length <= 3){
         html += `<ul>`

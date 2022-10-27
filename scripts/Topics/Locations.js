@@ -2,6 +2,7 @@ import { getLocations } from "../database.js"
 
 
 const locations = getLocations()
+
 export const locationsHTML = () => {
     
     let html = `<label for="locations">Choose a Location:</label>

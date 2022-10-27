@@ -41,3 +41,14 @@ li{
 .red{
     color: red;
 }
+
+.gotcha{
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    border-top: yellow solid 2px;
+    border-left: yellow solid 2px;
+    border-right: brown solid 2px;
+    border-bottom: brown solid 2px;
+}
+
