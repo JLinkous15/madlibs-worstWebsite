@@ -1,3 +1,3 @@
-import { getYogaPoses } from "./database.js"
+import { getYogaPoses } from "../database.js"
 
 const yogaPoses = getYogaPoses() 

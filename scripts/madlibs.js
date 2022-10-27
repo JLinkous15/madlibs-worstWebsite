@@ -40,6 +40,7 @@ import { yogaPosesHTML } from "./Topics/YogaPoses.js"
 export const Madlibs = () => {
     return `
         <div id="events">
+
         ${animalsHTML()}
         ${aromasHTML()}
         ${beatlesHTML()}
@@ -77,6 +78,7 @@ export const Madlibs = () => {
         ${weathersHTML()}
         ${windowTintHTML()}
         ${yogaPosesHTML()}
+
         </div>
         
         <div id="encouraging">

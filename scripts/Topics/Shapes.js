@@ -1,4 +1,4 @@
-import { getShapes } from "./database.js"
+import { getShapes } from "../database.js"
 
 const shapes = getShapes()
 
