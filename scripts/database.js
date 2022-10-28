@@ -845,21 +845,10 @@ const database = {
             motivator: "When it seems that the end is near, look back and celebrate how far you have come."
         }
     ],
-    madResponse: [
+    madResponses: [
         {
             id: 1,
-            response: `
-                        There once was a tale, 
-                        of a little snail, 
-                        who got lost in the forest and found some old rail. 
-                        The little snail, 
-                        followed the rail, 
-                        leading it to a cavern of shale. 
-                        Inch by inch, the light grew dimmer, 
-                        with every slither, the halls moved slimmer. 
-                        By the time the snail looked around, 
-                        it was then melting into the ground.
-                        `
+            response: "There once was a tale, of a little snail, who got lost in the forest and found some old rail. The little snail, followed the rail, leading it to a cavern of shale. Inch by inch, the light grew dimmer, with every slither, the halls moved slimmer. By the time the snail looked around, it was then melting into the ground."
         }
     ]
 }
@@ -946,8 +935,8 @@ export const getCountries = () => {
     return database.countries.map(country => ({ ...country }))
 }
 
-export const getMadResponse = () => {
-    return database.madResponse.map(madResponse => ({...madResponse}))
+export const getMadResponses = () => {
+    return database.madResponses.map(madResponse => ({...madResponse}))
 
 }
 export const getPickles = () => {

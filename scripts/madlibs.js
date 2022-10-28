@@ -36,6 +36,7 @@ import { weathersHTML } from "./Topics/Weathers.js"
 import { windowTintsHTML } from "./Topics/WindowTint.js"
 import { yogaPosesHTML } from "./Topics/YogaPoses.js"
 import { encouragementList } from "./Encouragement.js"
+import { getMadResponses } from "./database.js"
 
 
 
@@ -88,3 +89,16 @@ export const Madlibs = () => {
         </div>
     `
 }
+
+const madResponses = getMadResponses()
+document.addEventListener(
+    "click",
+    (e) => {
+        const clickedItem = e.target
+        if(clickedItem.id === "button"){
+            for(const r of madResponses){
+             return window.alert(`${r.response}`)
+            }
+         }
+    }
+)
