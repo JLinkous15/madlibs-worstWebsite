@@ -71,3 +71,10 @@ li{
     border-right: brown solid 2px;
     border-bottom: brown solid 2px;
 }
+
+#top-stuff{
+    display: flex;
+    color: orange;
+    align-items: end;
+    margin: 5px;
+}
