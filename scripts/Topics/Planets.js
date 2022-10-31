@@ -4,7 +4,7 @@ import { getPlanets } from "../database.js"
 const planets = getPlanets()
 export const planetsHTML = () => {
     
-    let html = `<label for="planets">Choose a Location:</label>
+    let html = `<label for="planets">Choose a Planet:</label>
     `
     if(planets.length <= 3){
         html += `<ul id="questions">`

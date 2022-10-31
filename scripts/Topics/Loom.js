@@ -4,7 +4,7 @@ import { getLooms } from "../database.js"
 const looms = getLooms()
 export const loomsHTML = () => {
     
-    let html = `<label for="looms">Choose a Location:</label>
+    let html = `<label for="looms">Choose a Loom:</label>
     `
     if(looms.length <= 3){
         html += `<ul id="questions">`
