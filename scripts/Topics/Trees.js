@@ -10,7 +10,7 @@ export const treesHTML = () => {
     if(trees.length <= 3){
         html += `<ul id="questions">`
         const tempHTML = trees.map(tree=>
-            `<li><input type="radio" name="trees" value="${tree.id}"/> ${tree.name}</li>`
+            `<li><input type="radio" name="trees" value="${tree.id}"/> ${tree.type}</li>`
             )
         html += `${tempHTML.join("")}</ul>`
     } else {
@@ -18,7 +18,7 @@ export const treesHTML = () => {
         <option value="0">Prompt to select resource...</option>`
 
         const tempHTML = trees.map(tree=>
-            `<option value="${tree.id}">${tree.name}</option>`)
+            `<option value="${tree.id}">${tree.type}</option>`)
             
         html += `${tempHTML.join("")}</select>`
     }
