@@ -4,7 +4,7 @@ const windowTints = getWindowTints()
 
 export const windowTintsHTML = () => {
     
-    let html = `<label for="windowTints">Choose a windowTint:</label>
+    let html = `<label for="windowTints">Choose a Window Tint:</label>
     `
     if(windowTints.length <= 3){
         html += `<ul id="questions">`

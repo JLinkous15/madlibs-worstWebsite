@@ -4,7 +4,7 @@ import { getMountainRanges } from "../database.js";
 const mountainRanges = getMountainRanges()
 export const mountainRangesHTML = () => {
     
-    let html = `<label for="mountainRanges">Choose a Location:</label>
+    let html = `<label for="mountainRanges">Choose a Mountain Range:</label>
     `
     if(mountainRanges.length <= 3){
         html += `<ul id="questions">`

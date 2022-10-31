@@ -4,7 +4,7 @@ import { getPatterns } from "../database.js"
 const patterns = getPatterns()
 export const patternsHTML = () => {
     
-    let html = `<label for="patterns">Choose a Location:</label>
+    let html = `<label for="patterns">Choose a Pattern:</label>
     `
     if(patterns.length <= 3){
         html += `<ul id="questions">`

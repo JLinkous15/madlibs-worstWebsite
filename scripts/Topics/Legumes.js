@@ -4,7 +4,7 @@ import { getLegumes } from "../database.js";
 const legumes = getLegumes()
 export const legumesHTML = () => {
     
-    let html = `<label for="legumes">Choose a Location:</label>
+    let html = `<label for="legumes">Choose a Legume:</label>
     `
     if(legumes.length <= 3){
         html += `<ul id="questions">`

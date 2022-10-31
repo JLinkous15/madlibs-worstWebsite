@@ -4,7 +4,7 @@ import { getPreciousMetals } from "../database.js";
 const preciousMetals = getPreciousMetals()
 export const preciousMetalsHTML = () => {
     
-    let html = `<label for="preciousMetals">Choose a Location:</label>
+    let html = `<label for="preciousMetals">Choose a Precious Metal:</label>
     `
     if(preciousMetals.length <= 3){
         html += `<ul id="questions">`

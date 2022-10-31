@@ -10,7 +10,7 @@ export const historicalFiguresHTML = () => {
     if (figures.length <= 3){
         html += `<ul id="questions">`
         const tempHTML = figures.map(figure=>
-            `<li><input type="radio" name="figures" value="${figure.id}"/> ${figure.name}</li>`
+            `<li><input type="radio" name="figures" value="${figure.id}"/> ${figure.type}</li>`
             )
         html += `${tempHTML.join("")}</ul>`
     } else {
@@ -18,7 +18,7 @@ export const historicalFiguresHTML = () => {
         <option value="0">Prompt to select resource...</option>`
 
         const tempHTML = figures.map(figure=>
-            `<option value="${figure.id}">${figure.name}</option>`)
+            `<option value="${figure.id}">${figure.type}</option>`)
             
         html += `${tempHTML.join("")}</select>`
     }

@@ -4,7 +4,7 @@ import { getPickles } from "../database.js";
 const pickles = getPickles()
 export const picklesHTML = () => {
     
-    let html = `<label for="pickles">Choose a Location:</label>
+    let html = `<label for="pickles">Choose a Pickle:</label>
     `
     if(pickles.length <= 3){
         html += `<ul id="questions">`
