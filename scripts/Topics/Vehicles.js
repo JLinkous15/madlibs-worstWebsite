@@ -10,7 +10,7 @@ export const vehiclesHTML = () => {
     if(vehicles.length <= 3){
         html += `<ul id="questions">`
         const tempHTML = vehicles.map(vehicle=>
-            `<li><input type="radio" name="vehicles" value="${vehicle.id}"/> ${vehicle.name}</li>`
+            `<li><input type="radio" name="vehicles" value="${vehicle.id}"/> ${vehicle.type}</li>`
             )
         html += `${tempHTML.join("")}</ul>`
     } else {
@@ -18,7 +18,7 @@ export const vehiclesHTML = () => {
         <option value="0">Prompt to select resource...</option>`
 
         const tempHTML = vehicles.map(vehicle=>
-            `<option value="${vehicle.id}">${vehicle.name}</option>`)
+            `<option value="${vehicle.id}">${vehicle.type}</option>`)
             
         html += `${tempHTML.join("")}</select>`
     }
